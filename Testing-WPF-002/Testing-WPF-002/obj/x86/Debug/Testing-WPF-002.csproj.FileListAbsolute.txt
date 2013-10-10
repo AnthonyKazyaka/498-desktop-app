@@ -17,3 +17,22 @@ C:\Users\David\Documents\School\CSE 498\WPF App\Testing-WPF-002\Testing-WPF-002\
 C:\Users\David\Documents\School\CSE 498\WPF App\Testing-WPF-002\Testing-WPF-002\bin\Debug\TinCanAPILibrary.dll
 C:\Users\David\Documents\School\CSE 498\WPF App\Testing-WPF-002\Testing-WPF-002\bin\Debug\TCAPIClientLibrary.pdb
 C:\Users\David\Documents\School\CSE 498\WPF App\Testing-WPF-002\Testing-WPF-002\bin\Debug\TinCanAPILibrary.pdb
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\bin\Debug\Testing-WPF-002.exe.config
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\obj\x86\Debug\Testing-WPF-002.exe
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\obj\x86\Debug\Testing-WPF-002.pdb
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\obj\x86\Debug\MainWindow.baml
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\obj\x86\Debug\MainWindow.g.cs
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\obj\x86\Debug\App.g.cs
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\obj\x86\Debug\Testing-WPF-002_MarkupCompile.cache
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\obj\x86\Debug\Testing-WPF-002.g.resources
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\obj\x86\Debug\Testing_WPF_002.Properties.Resources.resources
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\bin\Debug\Testing-WPF-002.exe
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\bin\Debug\Testing-WPF-002.pdb
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\bin\Debug\Newtonsoft.Json.dll
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\bin\Debug\TCAPIClientLibrary.dll
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\bin\Debug\TinCanAPILibrary.dll
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\bin\Debug\TCAPIClientLibrary.pdb
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\bin\Debug\TinCanAPILibrary.pdb

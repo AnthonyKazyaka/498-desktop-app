@@ -32,6 +32,7 @@ namespace Testing_WPF_002
             userLogin = UserField.Text;
             userPassword = passwordBox1.Password;
             TinCan.ConnectToTinCan(userLogin, userPassword);
+            TinCan.SendStatement(userLogin);
         }
     }
 }
