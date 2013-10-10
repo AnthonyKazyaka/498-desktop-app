@@ -36,3 +36,5 @@ C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\
 C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\bin\Debug\TinCanAPILibrary.dll
 C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\bin\Debug\TCAPIClientLibrary.pdb
 C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\bin\Debug\TinCanAPILibrary.pdb
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\obj\x86\Debug\LoggedIn.baml
+C:\Users\David\Documents\GitHub\498-desktop-app\Testing-WPF-002\Testing-WPF-002\obj\x86\Debug\LoggedIn.g.cs

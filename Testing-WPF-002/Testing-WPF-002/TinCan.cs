@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using RusticiSoftware.TinCanAPILibrary;
 using RusticiSoftware.TinCanAPILibrary.Model;
+using System.Windows.Forms;
 
 namespace Testing_WPF_002
 {
@@ -14,8 +15,15 @@ namespace Testing_WPF_002
 
         public static void ConnectToTinCan(string usrName, string passwd)
         {
-            tincan = new TCAPI(new Uri("http://35.9.22.105:8000/xapi"), new BasicHTTPAuth(usrName, passwd),
-                        RusticiSoftware.TinCanAPILibrary.Helper.TCAPIVersion.TinCan1p0p0);
+            try
+            {
+                tincan = new TCAPI(new Uri("http://35.9.22.105:8000/xapi"), new BasicHTTPAuth(usrName, passwd),
+                            RusticiSoftware.TinCanAPILibrary.Helper.TCAPIVersion.TinCan1p0p0);
+            }
+            catch (Exception e)
+            {
+                const string msg = "Invalid login information.  Please re-try.";
+            }
 
         }
 
