@@ -71,6 +71,8 @@ namespace Testing_WPF_002
                     _learningActivityWindows.Add(currentWindow);
                     DictionaryEntry fileAndProgramName = currentWindow.GetProgramNameAndFileName();
                     _fileAndProgramNames.Add(fileAndProgramName.Key.ToString(), fileAndProgramName.Value.ToString());
+                    
+                    TinCan.SendStatement(currentWindow.FileName);
                 }
             }
         }

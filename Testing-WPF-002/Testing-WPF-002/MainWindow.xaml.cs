@@ -49,8 +49,6 @@ namespace Testing_WPF_002
         {
             InitializeComponent();
 
-            
-
             /*this.trayIcon = new System.Windows.Forms.NotifyIcon();
             this.trayIcon.Icon = new System.Drawing.Icon("techSmith-01.ico");
             this.trayIcon.Visible = true;
