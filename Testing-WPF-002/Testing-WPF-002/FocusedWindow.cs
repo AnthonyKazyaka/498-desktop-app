@@ -47,7 +47,7 @@ namespace Testing_WPF_002
 
         public bool IsALearningActivity()
         {
-            if (WindowTitle.Contains(" - Word"))
+            if (WindowTitle.Contains(" - Word") || WindowTitle.Contains(" - Microsoft Word"))
             {
                 return true;
             }
@@ -60,6 +60,11 @@ namespace Testing_WPF_002
             {
                 ProgramName = "Microsoft Word";
                 FileName = WindowTitle.Remove(WindowTitle.IndexOf(" - Word"));            
+            }
+            else if (WindowTitle.Contains(" - Microsoft Word"))
+            {
+                ProgramName = "Microsoft Word";
+                FileName = WindowTitle.Remove(WindowTitle.IndexOf(" - Microsoft Word"));
             }
             return new DictionaryEntry(FileName, ProgramName);
         }
