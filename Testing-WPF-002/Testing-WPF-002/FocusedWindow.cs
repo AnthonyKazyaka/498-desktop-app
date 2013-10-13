@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -10,25 +11,27 @@ namespace Testing_WPF_002
 {
     public class FocusedWindow : IEquatable<FocusedWindow>
     {
-        private string _name;
-        public string Name
+        public string WindowTitle
         {
-            get { return _name; }
-            set { _name = value; }
+            get; private set;
         }
 
-        private string _untrimmedName;
+        public string ProgramName
+        {
+            get; private set;
+        }
+
+        public string FileName
+        {
+            get; private set;
+        }
 
         private int _windowHandle;
-        public int WindowHandle
-        {
-            get { return _windowHandle; }
-        }
+        public int WindowHandle {get { return _windowHandle; }}
 
         public FocusedWindow(string name, int _handle)
         {
-            Name = name;
-            _untrimmedName = name;
+            WindowTitle = name;
             this._windowHandle = _handle;
         }
 
@@ -44,17 +47,21 @@ namespace Testing_WPF_002
 
         public bool IsALearningActivity()
         {
-            if (Name.Contains(" - Word"))
+            if (WindowTitle.Contains(" - Word"))
             {
-                TrimName();
                 return true;
             }
             return false;
         }
 
-        public void TrimName()
+        public DictionaryEntry GetProgramNameAndFileName()
         {
-            Name = Name.Remove(Name.IndexOf(" - Word"));            
+            if (WindowTitle.Contains(" - Word"))
+            {
+                ProgramName = "Microsoft Word";
+                FileName = WindowTitle.Remove(WindowTitle.IndexOf(" - Word"));            
+            }
+            return new DictionaryEntry(FileName, ProgramName);
         }
 
     }
