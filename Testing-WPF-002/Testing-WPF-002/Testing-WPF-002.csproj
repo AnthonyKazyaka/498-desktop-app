@@ -70,6 +70,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="FocusedWindow.cs" />
+    <Compile Include="FocusedWindowManager.cs" />
     <Compile Include="LoggedIn.xaml.cs">
       <DependentUpon>LoggedIn.xaml</DependentUpon>
     </Compile>

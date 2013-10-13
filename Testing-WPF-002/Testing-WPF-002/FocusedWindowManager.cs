@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -23,6 +24,8 @@ namespace Testing_WPF_002
         DispatcherTimer _dispatcherTimer = new DispatcherTimer();
 
         private List<FocusedWindow> _learningActivityWindows = new List<FocusedWindow>();
+
+        private Dictionary<string, string> _fileAndProgramNames = new Dictionary<string, string>();
 
         private TimeSpan _intervalTime = new TimeSpan(0, 0, 5);
 
@@ -65,8 +68,9 @@ namespace Testing_WPF_002
                 FocusedWindow currentWindow = new FocusedWindow(windowNameStringBuilder.ToString(), handle);
                 if (currentWindow.IsALearningActivity() && !_learningActivityWindows.Contains(currentWindow))
                 {
-                    currentWindow.TrimName();
                     _learningActivityWindows.Add(currentWindow);
+                    DictionaryEntry fileAndProgramName = currentWindow.GetProgramNameAndFileName();
+                    _fileAndProgramNames.Add(fileAndProgramName.Key.ToString(), fileAndProgramName.Value.ToString());
                 }
             }
         }
