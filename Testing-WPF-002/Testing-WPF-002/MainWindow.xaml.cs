@@ -38,21 +38,26 @@ namespace Testing_WPF_002
 
         private string userLogin;
         private string userPassword;
+        private NotifyIcon trayIcon;
+        private System.Windows.Forms.ContextMenu trayMenu;
 
         private bool _isUserLoggedIn = false; 
 
         private FocusedWindowManager _focusedWindowManager = new FocusedWindowManager();
 
-        //private System.Windows.Forms.NotifyIcon trayIcon;
-
         public MainWindow()
         {
             InitializeComponent();
+            
+            trayIcon = new NotifyIcon();
+            trayIcon.Icon = new System.Drawing.Icon("techSmith-01.ico");
+            trayIcon.Visible = true;
 
-            /*this.trayIcon = new System.Windows.Forms.NotifyIcon();
-            this.trayIcon.Icon = new System.Drawing.Icon("techSmith-01.ico");
-            this.trayIcon.Visible = true;
-            */
+            trayMenu = new System.Windows.Forms.ContextMenu();
+            trayMenu.MenuItems.Add(0, new System.Windows.Forms.MenuItem("Show", new System.EventHandler(Show_Click)));
+            trayMenu.MenuItems.Add(1, new System.Windows.Forms.MenuItem("Exit", new System.EventHandler(Exit_Click)));
+
+            trayIcon.ContextMenu = trayMenu;
 
         }
 
@@ -60,6 +65,16 @@ namespace Testing_WPF_002
         {
             LogIntoTinCan();
             //TinCan.SendStatement(userLogin);            
+        }
+
+        protected void Show_Click(Object sender, System.EventArgs e)
+        {
+            ReviveWindow();
+        }
+
+        protected void Exit_Click(Object sender, System.EventArgs e)
+        {
+            Close();
         }
 
         private void LogIntoTinCan()
@@ -74,6 +89,12 @@ namespace Testing_WPF_002
             MinimizeWindow();
         }
 
+        private void ReviveWindow()
+        {
+            this.Show();
+            this.WindowState = System.Windows.WindowState.Normal;
+        }
+
         private void MinimizeWindow()
         {
             this.WindowState = System.Windows.WindowState.Minimized;
@@ -82,7 +103,7 @@ namespace Testing_WPF_002
 
         private void Window_Closed(object sender, EventArgs e)
         {
-            //this.trayIcon.Visible = false;
+            this.trayIcon.Visible = false;
         }
     }
 }
